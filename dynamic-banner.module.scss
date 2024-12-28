@@ -1,0 +1,20 @@
+@use '~@chewy/kib-foundations/src/spacing';
+@use '~@chewy/kib-foundations/src/color';
+@use '~@chewy/kib-foundations/src/typography';
+
+@use '../../styles/widget-mixins';
+
+.dynamicBanner__recipeSelector {
+  width: 342px;
+}
+
+.dynamicBanner__contents {
+  @include widget-mixins.border;
+
+  width: 100%;
+  padding: spacing.get('s6', 's4', 's4');
+}
+
+.dynamicBanner__textConfigButton {
+  margin-inline-end: spacing.get('s1');
+}
